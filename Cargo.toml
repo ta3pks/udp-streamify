@@ -1,0 +1,12 @@
+[package]
+name = "udp-streamify"
+version = "0.1.0"
+authors = ["nikos efthias <nikos@mugsoft.io>"]
+edition = "2018"
+[profile.dev]
+  debug = 2
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.2.0", features = ["net", "sync", "rt", "macros", "time"] }
